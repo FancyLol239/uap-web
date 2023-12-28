@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+
+    <link rel="stylesheet" href="uap.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Kode</th>
+            <th>Barang</th>
+            <th>Harga</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Barang A</td>
+                <td>10.000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Barang B</td>
+                <td>20.000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Barang C</td>
+                <td>30.000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<h1>Inputan User</h1>
+<body>
+    <table>
+        <form id="mytoko" onsubmit="return validatedForm">
+            <label for="kode">Masukkan Code</label>
+            <input type="text" id="kode" nama="kode"><br>
+            <span class="error" id="kodeError"></span><br>
+
+            <label for="bbarang">Banyaknya Barang</label>
+            <input type="text" id="bbarang" nama="bbarang"><br>
+            <span class="error" id="bbarangError"></span><br>
+
+            <input type="button" value="Submit" onclick="validatedForm">
+            <!-- <tr>
+                <td>Masukkan Code</td>
+                <td><input type="text" name="kode"></td>
+            </tr>
+            <tr>
+                <td>Banyaknya Barang</td>
+                <td><input type="text" name="bbarang"></td>
+            </tr>
+            <tr>
+            </tr> -->
+        </form>
+    </table>
+</body>
+</html>
